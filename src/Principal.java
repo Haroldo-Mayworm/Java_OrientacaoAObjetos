@@ -1,4 +1,6 @@
-import br.com.haroldo.sreenmatch.modelos.Filme;
+import br.com.haroldo.screenmatch.calculo.CalculadoraTempo;
+import br.com.haroldo.screenmatch.modelos.Filme;
+import br.com.haroldo.screenmatch.modelos.Serie;
 
 public class Principal {
 	public static void main(String[] args) {
@@ -23,6 +25,46 @@ public class Principal {
 		filmeFavorito.avalie(7);
 		System.out.println(filmeFavorito.retornaMediaAvaliacao());
 		
-		System.out.println(filmeFavorito.getQuantidadeAvaliacao());
+		System.out.println(filmeFavorito.getQuantidadeAvaliacao());	
+//
+		
+		Serie supernatural = new Serie();
+		supernatural.setNome("supernatural");
+		supernatural.setSinopse("""
+								Os irmãos Sam e Dean Winchester 
+								encaram cenários sinistros 
+								caçando monstros.""");
+		supernatural.setAnoLancamento(2005);
+		supernatural.setTemporada(15);
+		supernatural.setEpisodiosTemporada(10);
+		supernatural.setMinutosEpisodio(50);
+		System.out.println("Duração total da serie: " + supernatural.getDuracaoMinutos());
+		supernatural.exibeFichaTecnica();
+//		
+		Filme outroFilme = new Filme();
+		outroFilme.setNome("Uma Noite no Museu");
+		outroFilme.setAnoLancamento(1991);
+		outroFilme.setDuracaoMinutos(109);
+//
+		
+		CalculadoraTempo calculadora = new CalculadoraTempo();
+		calculadora.inclui(filmeFavorito);
+		calculadora.inclui(outroFilme);
+		calculadora.inclui(supernatural);
+		System.out.println(calculadora.getTempoTotal());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 }

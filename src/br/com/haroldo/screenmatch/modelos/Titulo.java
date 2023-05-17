@@ -1,5 +1,6 @@
-package br.com.haroldo.sreenmatch.modelos;
-public class Filme {
+package br.com.haroldo.screenmatch.modelos;
+
+public class Titulo {
 	private String nome;
 	private String sinopse;
 	private int anoLancamento;
