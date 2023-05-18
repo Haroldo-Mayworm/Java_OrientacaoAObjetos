@@ -57,7 +57,7 @@ public class Titulo {
 	}
 	//
 	
-	// Métodos
+	// 
 	public void exibeFichaTecnica() {
 		System.out.println("Nome do filme: " + nome);
 		System.out.println("Sinopse: " + sinopse);
