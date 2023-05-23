@@ -1,4 +1,4 @@
-<h2>Curso de "Java: aplicando a Orientação a Objetos" da Alura (Em andamento)</h2>
+<h2>Curso de "Java: aplicando a Orientação a Objetos" da Alura (Concluído)</h2>
 
 Este repositório contém o material do curso, abrangendo os conceitos: Programação orientada a objetos; Aplicações via classes, atributos e métodos; Herança como mecanismo de reaproveitamento de código; Polimorfismo; Padronização de métodos. O curso tem como objetivo fornecer uma base sólida, portanto neste repositório estão exemplos de código, exercícios e projeto que desenvolvi.
 </br>
